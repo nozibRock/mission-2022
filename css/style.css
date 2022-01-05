@@ -156,3 +156,44 @@
   }
 }
 /* Mission Section styles end */
+
+/* develop section styles start */
+.develop_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  gap: 5rem;
+}
+
+.develop_imgWrapper {
+  max-width: 365px;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 768px) {
+  .develop_wrapper {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0;
+  }
+  .develop_left {
+    flex: 3;
+  }
+  .develop_right {
+    flex: 4;
+  }
+  .develop_right_wrapper {
+    max-width: 650px;
+  }
+  .develop_imgWrapper {
+    max-width: 400px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .develop_left,
+  .develop_right {
+    flex: 1;
+  }
+}
+/* develop section styles end */
