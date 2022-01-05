@@ -158,6 +158,13 @@
 /* Mission Section styles end */
 
 /* develop section styles start */
+#develop {
+  background-image: url("/images/shapes/shape-1.png");
+  background-repeat: no-repeat;
+  background-size: 200px;
+  background-position-x: 60px;
+  background-position-y: 150px;
+}
 .develop_wrapper {
   display: flex;
   align-items: center;
@@ -197,3 +204,12 @@
   }
 }
 /* develop section styles end */
+
+#community {
+  background-image: url("/images/shapes/shape-1.png");
+  background-repeat: no-repeat;
+  background-size: 200px;
+  background-position: right;
+  background-position-x: 1110px;
+  background-position-y: 330px;
+}
