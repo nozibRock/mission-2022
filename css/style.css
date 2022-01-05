@@ -158,18 +158,12 @@
 /* Mission Section styles end */
 
 /* develop section styles start */
-#develop {
-  background-image: url("/images/shapes/shape-1.png");
-  background-repeat: no-repeat;
-  background-size: 200px;
-  background-position-x: 60px;
-  background-position-y: 150px;
-}
+
 .develop_wrapper {
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column-reverse;
+  justify-content: space-between;
+  flex-direction: column;
   gap: 5rem;
 }
 
@@ -180,9 +174,9 @@
 @media only screen and (min-width: 768px) {
   .develop_wrapper {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    gap: 0;
+    gap: 1;
   }
   .develop_left {
     flex: 3;
@@ -205,11 +199,23 @@
 }
 /* develop section styles end */
 
-#community {
-  background-image: url("/images/shapes/shape-1.png");
-  background-repeat: no-repeat;
-  background-size: 200px;
-  background-position: right;
-  background-position-x: 1110px;
-  background-position-y: 330px;
+.community_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  gap: 5rem;
 }
+@media only screen and (min-width: 768px) {
+  .community_wrapper {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0;
+  }
+  .develop_left {
+    flex: 3;
+  }
+  .develop_right {
+    flex: 4;
+  }
