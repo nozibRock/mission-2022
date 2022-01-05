@@ -15,11 +15,12 @@
   margin: 0 auto;
 }
 .hero_heading {
-  font-family: "Yeseva One", cursive;
   font-weight: normal;
   font-size: 30px;
-  columns: var(--black-1);
   margin-bottom: 15px;
+  border-left: 4px solid var(--red);
+  border-radius: 5px;
+  padding-left: 12px;
 }
 .twenty-two {
   color: var(--orange);
@@ -30,7 +31,6 @@
   margin-bottom: 19px;
 }
 .primary-btn {
-  color: var(--white);
   background: var(--red);
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -38,6 +38,10 @@
   border-radius: 5px;
   padding: 12px;
   margin-bottom: 35px;
+  transition: all 0.3s ease-in-out;
+}
+.primary-btn:hover {
+  background: var(--orange);
 }
 @media only screen and (min-width: 700px) {
   .btn {
@@ -88,3 +92,67 @@
   }
 }
 /* hero section styles end */
+
+/* Mission Section styles start */
+.mission_title {
+  font-size: 24px;
+  line-height: 70px;
+  color: var(--blue);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.mission_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.mission_item {
+  padding: 10px;
+  text-align: left;
+  border-radius: 12px;
+  width: 75%;
+}
+#mission {
+  background: var(--bg-1);
+}
+#vission {
+  background: var(--bg-2);
+}
+#goal {
+  background: var(--bg-3);
+}
+.mission_icon {
+  text-align: left;
+  width: 110px;
+  margin-bottom: 12px;
+}
+.mission_item_title {
+  font-size: 24px;
+  line-height: 70px;
+  color: var(--black-5);
+  text-align: left;
+  margin-bottom: 16px;
+}
+@media only screen and (min-width: 768px) {
+  .mission_title {
+    font-size: 48px;
+    line-height: 35px;
+    margin-bottom: 5rem;
+  }
+  .mission_wrapper {
+    gap: 2rem;
+  }
+  .mission_item {
+    width: 30%;
+    padding: 20px;
+  }
+  .mission_icon {
+    width: 125px;
+  }
+  .mission_item_title {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+/* Mission Section styles end */
