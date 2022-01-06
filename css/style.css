@@ -53,8 +53,8 @@
 @media only screen and (min-width: 768px) {
   .hero_wrapper {
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-end;
     gap: 0;
   }
   .hero_left {
@@ -227,11 +227,11 @@
   color: var(--black-1);
 }
 .contactInfo__title a {
-    color: var(--blue);
-    transition: all 0.5s ease-in-out;
+  color: var(--blue);
+  transition: all 0.5s ease-in-out;
 }
 .contactInfo__title a:hover {
-    color: var(--bg-1);
+  color: var(--bg-1);
 }
 .contactInfo__text {
   font-size: 1.4rem;
@@ -240,7 +240,7 @@
 }
 @media only screen and (min-width: 768px) {
   .contactInfo__wrapper {
-      justify-content: space-between;
+    justify-content: space-between;
     gap: 2rem;
   }
   .contactInfo__item {
@@ -322,7 +322,7 @@
 }
 .newsletter_form button[type="submit"] {
   background-color: var(--orange);
-  color: var(--white-1);
+  color: var(--black-1);
   border: none;
   font-size: 1.4rem;
   padding: 0 0.5rem;
@@ -364,3 +364,44 @@
   }
 }
 /* Newsletter Section end */
+
+/* Footer Styles start  */
+footer {
+  background: var(--black-7);
+  color: var(--gray);
+  text-align: center;
+  line-height: 30px;
+  padding: 39px 0;
+  letter-spacing: 2px;
+}
+footer h3 {
+  font-family: "Lobster", cursive;
+  color: var(--white);
+}
+footer .footer_text h3 span {
+  color: var(--red);
+}
+footer .footer_text p {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+}
+.footer_text img {
+  width: 1%;
+}
+@media (max-width: 767px) and (min-width: 426px) {
+  .footer_text img {
+    width: 3%;
+  }
+}
+@media (max-width: 767px) and (min-width: 426px) {
+  .footer_text img {
+    width: 3%;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .footer_text img {
+    width: 5%;
+  }
+}
+/* Footer Styles end  */
