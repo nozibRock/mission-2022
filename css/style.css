@@ -159,7 +159,7 @@
 
 /* develop section styles start */
 #develop {
-  background-image: url("./images/shape.png");
+  background-image: url("/images/shape.png");
   background-repeat: no-repeat;
   background-size: 15%;
   background-position-x: 1%;
@@ -282,7 +282,7 @@
 
 /* community styles start */
 #community {
-  background: url("./images/shape.png");
+  background: url("/images/shape.png");
   background-repeat: no-repeat;
   background-size: 15%;
   background-position: right;
